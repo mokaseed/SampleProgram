@@ -3,14 +3,6 @@
     margin: 0;
 }
 
-
-.wrapper {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .typing-effect-sample {
     width: 22.5ch;
     animation: typing 3s steps(38), blink .5s step-end infinite alternate;
