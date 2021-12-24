@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- mainview -->
+<section class="mainview">
+    <div class="mainview__container">
+        <div class="mainview__text-wrapper">
+            <p class="mainview__text-main">
+                あなた<span class=" mainview__text-main_size_s">の</span>“想い”<span class="mainview__text-main_size_s">を</span><br class="mainview__text-main_br_sp">形<span class="mainview__text-main_size_s">にします</span>
+            </p>
+            <div class="mainview__text-sub-wrapper">
+                <p class="mainview__text-sub mainview__text-sub_pc">HP制作</p>
+                <p class="mainview__text-sub mainview__text-sub_sp">ホームページ制作</p>
+                <p class="mainview__text-sub">ランディングページ制作</p>
+            </div>
+            <div class="mainview__contact-link-wrapper">
+                <a href="" class="mainview__contact-link">無料で相談する</a>
+            </div>
+        </div>
+    </div>
+</section><!-- /.mainview -->
+
+<style>
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "HiraKakuProN-W3", "Meiryo", "MS PGothic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 2rem;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+  color: #616161;
+}
+
+.mainview {
+  margin: 0 auto;
+  width: 100%;
+}
+.mainview__container {
+  display: flex;
+  height: 95vh;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1366px;
+}
+
+.mainview__text-wrapper {
+  margin-top: 18rem;
+  margin-left: 12rem;
+  display: flex;
+  flex-direction: column;
+}
+.mainview__text-main {
+  font-size: 5.9rem;
+  animation: slideInleft 2s ease 0s ;
+}
+.mainview__text-main_size_s {
+  font-size: 5rem;
+}
+@media screen and (max-width: 1000px) {
+  .mainview__text-main_size_s {
+    font-size: 3.5rem;
+  }
+}
+.mainview__text-main_br_sp {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .mainview__text-main_br_sp {
+    display: block;
+  }
+}
+.mainview__text-sub-wrapper {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 700px) {
+  .mainview__text-sub-wrapper {
+    flex-direction: column;
+  }
+}
+.mainview__text-sub {
+  font-size: 3.5rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  background-color: #ACD6C8;
+  padding: 0 3.5rem;
+  border-radius: 20px;
+  opacity: 0;
+  animation: slideInUp 2s ease 1s forwards;
+}
+@media screen and (max-width: 1000px) {
+  .mainview__text-sub {
+    font-size: 2.8rem;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mainview__text-sub {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mainview__text-sub_pc {
+    display: none;
+  }
+}
+.mainview__text-sub_sp {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .mainview__text-sub_sp {
+    display: block;
+    margin: 1.5rem 0;
+  }
+}
+.mainview__contact-link-wrapper {
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: 9rem;
+}
+@media screen and (max-width: 700px) {
+  .mainview__contact-link-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5rem;
+  }
+}
+.mainview__contact-link-wrapper :hover {
+  background-color: #E6F1ED;
+}
+.mainview__contact-link-wrapper :active {
+  position: relative;
+  top: 3px;
+  left: 3px;
+  box-shadow: none;
+}
+.mainview__contact-link {
+  font-size: 3.5rem;
+  color: #7A918A;
+  font-weight: bold;
+  background-color: #FFFFFF;
+  padding: 1.5rem 5rem;
+  border-radius: 50px;
+  box-shadow: 5px 5px 0px 0 #7A918A;
+}
+
+@keyframes slideInleft {
+    from {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+
+
+
+</body>
+</html>
